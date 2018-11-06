@@ -24,7 +24,7 @@
 #### Databases
 
 ```
-databases are located in month folders inside 'isaacData/' directory
+database files must be located in '[data folder]/[year]/[month]/' dir
 ```
 
 ---
@@ -39,18 +39,17 @@ databases are located in month folders inside 'isaacData/' directory
 - main program
 
 #### *_support.py:
-- backend for GUI files
+- GUI files - functions
 
 
 ### Frontend:
 
 #### directorySetup.py (GUI):
-- main program opens this dialog only if config.ini doesn't exist (when path to isaacData dir is not configured)
+- main program opens this dialog only if config.ini doesn't exist inside Isaac dir
 
 #### startScreen.py (GUI):
-- checks if isaacData folder exist 
-   (blocks Start button if issacData folder doesn't exist)
-- counts num of folders (months) inside isaacData folder
+- checks if data dir exist
+  (blocks Start button if data dir doesn't exist)
 
 #### isaacInterface.py (GUI):
 - main window
