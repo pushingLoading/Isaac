@@ -13,7 +13,9 @@
 
 ---
 
-### Concept:
+### Concept
+
+---
 
 #### Configs
 - /config.ini (main config)
@@ -26,7 +28,7 @@ databases are located in month folders inside 'isaacData/' directory
 
 ---
 
-### Files description:
+### Files description
 
 ---
 
