@@ -128,11 +128,18 @@ class startScreen:
 
         self.isaacFolder.configure(width=69)
 
+        dirNum = 0
+        years = [f.path for f in os.scandir(config['GENERAL']['isaacDataPath']) if f.is_dir()]
+
+        for y in years:
+            months = [f.path for f in os.scandir(y) if f.is_dir()]
+            dirNum += len(months)
+
         self.Label7 = tk.Label(top)
         self.Label7.place(relx=0.55, rely=0.675, height=19, width=192)
         self.Label7.configure(activebackground="#f9f9f9")
         if folderInit==1:
-            self.Label7.configure(text=str(len(next(os.walk(config['GENERAL']['isaacDataPath']))[1])))
+            self.Label7.configure(text=str(dirNum))
         else:
             self.Label7.configure(text='isaacFolder not found!')
         self.Label7.configure(width=72)

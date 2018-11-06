@@ -22,10 +22,10 @@ import cpu_info_support
 def vp_start_gui():
     '''Starting point when module is the main routine.'''
     global val, w, root
-    root = Tk()
-    top = CPU_Information (root)
-    cpu_info_support.init(root, top)
-    root.mainloop()
+    w = Toplevel ()
+    top = CPU_Information (w)
+    cpu_info_support.init(w, top)
+    w.mainloop()
 
 w = None
 def create_CPU_Information(root, *args, **kwargs):
