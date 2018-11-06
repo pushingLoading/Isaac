@@ -82,7 +82,7 @@ class SelectDatabase:
         self.Label2 = tk.Label(self.Frame1)
         self.Label2.place(relx=0.046, rely=0.222, height=19, width=402)
         self.Label2.configure(activebackground="#f9f9f9")
-        self.Label2.configure(text='''Inteintelligent calculator and Bitfinex data analyzer''')
+        self.Label2.configure(text='''Intelligent calculator and Bitfinex data analyzer''')
 
         self.Label3 = tk.Label(top)
         self.Label3.place(relx=0.733, rely=0.364, height=17, width=74)
