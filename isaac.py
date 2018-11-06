@@ -7,14 +7,18 @@ import startScreen
 import directorySetup
 
 config = configparser.ConfigParser()
+root = tk.Tk()
+root.withdraw()
+
 
 def initConfig():
     config['GENERAL'] = {'isaacDataPath' : ''}
-    config['GENERAL']['isaacDataPath'] = directorySetup.showDialog()
+    config['GENERAL']['isaacDataPath'] = directorySetup.showDialog(root)
     with open('config.ini', 'w') as configfile:
         config.write(configfile)
 
 if not os.path.isfile("config.ini"):
     initConfig()
 
-startScreen.startStartScreen()
+startScreen.create_startScreen(root)
+root.mainloop()

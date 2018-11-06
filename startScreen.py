@@ -25,27 +25,32 @@ def openConfig():
 def vp_start_gui():
     '''Starting point when module is the main routine.'''
     global val, w, root
+    openConfig()
     root = tk.Tk()
-    top = SelectDatabase (root)
+    top = startScreen (root)
     startScreen_support.init(root, top)
     root.mainloop()
 
 w = None
-def create_SelectDatabase(root, *args, **kwargs):
+def create_startScreen(root, *args, **kwargs):
     '''Starting point when module is imported by another program.'''
     global w, w_win, rt
+    openConfig()
     rt = root
     w = tk.Toplevel (root)
-    top = SelectDatabase (w)
+    top = startScreen (w)
     startScreen_support.init(w, top, *args, **kwargs)
     return (w, top)
 
-def destroy_SelectDatabase():
+def hideWindow():
+    w.withdraw()
+
+def destroy_startScreen():
     global w
     w.destroy()
     w = None
 
-class SelectDatabase:
+class startScreen:
 
     def __init__(self, top=None):
         '''This class configures and populates the toplevel window.
@@ -105,7 +110,8 @@ class SelectDatabase:
         self.Button1 = tk.Button(top)
         self.Button1.place(relx=0.433, rely=0.857, height=27, width=87)
         self.Button1.configure(activebackground="#d9d9d9")
-        self.Button1.configure(text='''Start''')
+        self.Button1.configure(text='''Start''', command=startScreen_support.start)
+
 
         self.isaacFolder = tk.Label(top)
         self.isaacFolder.place(relx=0.55, rely=0.571, height=19, width=189)
@@ -132,6 +138,4 @@ class SelectDatabase:
         self.Label7.configure(width=72)
 
 def startStartScreen():
-    openConfig()
-
     vp_start_gui()

@@ -7,6 +7,9 @@
 
 import sys
 
+import startScreen
+import isaacInterface
+
 try:
     import Tkinter as tk
 except ImportError:
@@ -31,10 +34,10 @@ def destroy_window():
     top_level.destroy()
     top_level = None
 
+def start():
+    startScreen.hideWindow()
+    isaacInterface.create_IsaacInterface(root)
+
 if __name__ == '__main__':
     import startScreen.py
     startScreen.py.vp_start_gui()
-
-
-
-
