@@ -1,7 +1,8 @@
 # Isaac
+> Master of the Royal Mint 
 
 <p align="center">
-<a href="http://fvcproductions.com"><img src="https://pm1.narvii.com/6607/0b92889dff8c5f5a35bb800da2a424dbdd50560d_hq.jpg" title="Isaac"></a></p>
+<a href="https://science.howstuffworks.com/innovation/famous-inventors/5-isaac-newton-inventions8.htm"><img src="https://pm1.narvii.com/6607/0b92889dff8c5f5a35bb800da2a424dbdd50560d_hq.jpg" title="Isaac"></a></p>
 
 ### Usage:
 
