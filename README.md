@@ -12,6 +12,9 @@
 
 ### Concept:
 
+#### Configs
+- /config.ini (main config)
+
 #### Databases
 
 ```
