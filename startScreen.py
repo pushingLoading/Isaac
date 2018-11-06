@@ -92,7 +92,7 @@ class startScreen:
         self.Label3.place(relx=0.733, rely=0.364, height=17, width=74)
         self.Label3.configure(activebackground="#f9f9f9")
         self.Label3.configure(font=font9)
-        self.Label3.configure(text='''version 0.0.0''')
+        self.Label3.configure(text='''version 0.0.1''')
 
         self.menubar = tk.Menu(top,font="TkMenuFont",bg=_bgcolor,fg=_fgcolor)
         top.configure(menu = self.menubar)
