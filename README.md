@@ -28,8 +28,18 @@ databases are located in month folders inside 'isaacData/' directory
 
 ### Files description:
 
+---
+
+### Backend:
+
 #### issac.py:
 - main program
+
+#### *_support.py:
+- backend for GUI files
+
+
+### Frontend:
 
 #### directorySetup.py (GUI):
 - main program opens this dialog only if config.ini doesn't exist (when path to isaacData dir is not configured)
@@ -38,3 +48,10 @@ databases are located in month folders inside 'isaacData/' directory
 - checks if isaacData folder exist 
    (blocks Start button if issacData folder doesn't exist)
 - counts num of folders (months) inside isaacData folder
+
+#### isaacInterface.py (GUI):
+- main window
+> added INFO/CPU Info functionality
+
+#### cpu_info.py (GUI):
+- info window
